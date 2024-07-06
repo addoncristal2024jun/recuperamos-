@@ -6,7 +6,7 @@
 
 
 <item>
-<title>[COLOR gold]*[/COLOR]x1 [COLOR aqua]Cine [COLOR white]Cristal Kids[/COLOR]</title>
+<title>[COLOR gold]*[/COLOR]x2 [COLOR aqua]Cine [COLOR white]Cristal Kids[/COLOR]</title>
 <link>$doregex[c]</link>
 <regex>
 <name>c</name>
@@ -20,7 +20,7 @@
 <fanart>[c.param5]</fanart>
 ]]></listrepeat>
 <expres><![CDATA[#$pyFunction
-PAGINADO = 100
+PAGINADO = 300
 import re,requests,base64,xbmc,six
 from kodi_six import xbmc,xbmcgui,xbmcaddon,xbmcvfs
 EJECUTAR_XBMC = xbmc if six.PY2 else xbmcvfs
@@ -31,12 +31,15 @@ CACHE_EXPIRATION = datetime.timedelta(minutes=5)
 httptools.load_cookies()
 def GetLSProData(page_data,Cookie_Jar,m,PAGINADO=PAGINADO):#cPrLItsLTfakl
     #xbmc.log('response loco: ' + page_data, LOGNOTICE)
-
+    if '"""1' == page_data[:4]:
+        response = ''
+    else:
+        response = ''
     patron = '(?s)<item>(.*?)</item>'
     try:
-        items = re.findall(patron, page_data.split('PAGINA_PETICIONES')[0])
+        items = re.findall(patron, response+page_data.split('PAGINA_PETICIONES')[0])
     except:
-        items = re.findall(patron, page_data)
+        items = re.findall(patron, response+page_data)
     if len(items) == 0:
         xbmc.executebuiltin("Notification([COLOR aqua]Cristal Azul [/COLOR],[COLOR gold]Imposible Conectar Con Base de Datos[/COLOR], 15000)")
         return [('[COLOR red]No Se Puede Acceder a la base...[/COLOR]', ' ', 'https://i.imgur.com/2tS3oPI.jpg', 'https://i.imgur.com/2tS3oPI.jpg', 'Imposible Concetar con la base', 'https://www.youtube.com/watch?v=4DPGjjCBcAg')] + [('[COLOR aqua]Solucion en Telegram: [COLOR white]@addonfestaycristal[/COLOR]', ' ', 'https://i.imgur.com/2tS3oPI.jpg', 'https://i.imgur.com/2tS3oPI.jpg', 'Imposible Concetar con la base', 'https://www.youtube.com/watch?v=4DPGjjCBcAg')]
