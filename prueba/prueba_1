@@ -67,11 +67,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     ArchivoDestino = EJECUTAR_XBMC.translatePath('special://profile/addon_data/' + xbmcaddon.Addon().getAddonInfo('id') + '/_cache_estrenos')
     f = open(ArchivoDestino ,'rb')
     items_response = six.ensure_str(f.read())
-    try:
-         nuevo_page = page_data.split('PAGINA_PETICIONES')[0]
-    except:
-         nuevo_page = page_data
-    html = nuevo_page.split(items_response)[1]
+    html = page_data.split(items_response)[1]
     patron = '(?s)<item>(.*?)</item>'
     items = re.findall(patron, html)
     if len(items) == 0:
