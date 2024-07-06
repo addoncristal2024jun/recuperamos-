@@ -58,7 +58,7 @@ def GetLSProData(page_data,Cookie_Jar,m,PAGINADO=PAGINADO):#cPrLItsLTfakl
     open(ArchivoDestino ,'wb').write(six.ensure_binary(str(items_response[-1][-7])))
     return cabecera + items_response + hay_mas_o_no
 ]]></expres>
-<page>$doregex[distancia]</page>
+<page>https://raw.githubusercontent.com/staffcf/canto/main/KIDS/Cine.kids.txt</page>
 <nextpage><![CDATA[#$pyFunction
 import re,requests,base64,xbmc,six,shutil
 from kodi_six import xbmc,xbmcgui,xbmcaddon,xbmcvfs
