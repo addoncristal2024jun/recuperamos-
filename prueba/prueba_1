@@ -6,7 +6,7 @@
 
 
 <item>
-<title>[COLOR gold]*[/COLOR]x3 [COLOR aqua]Cine [COLOR white]Cristal Kids[/COLOR]</title>
+<title>[COLOR gold]*[/COLOR]x1 [COLOR aqua]Cine [COLOR white]Cristal Kids[/COLOR]</title>
 <link>$doregex[c]</link>
 <regex>
 <name>c</name>
@@ -64,6 +64,7 @@ import re,requests,base64,xbmc,six,shutil
 from kodi_six import xbmc,xbmcgui,xbmcaddon,xbmcvfs
 EJECUTAR_XBMC = xbmc if six.PY2 else xbmcvfs
 LOGNOTICE = xbmc.LOGNOTICE if six.PY2 else xbmc.LOGINFO
+text_type = unicode if six.PY2 else str
 def GetLSProData(page_data,Cookie_Jar,m):
     ArchivoDestino = EJECUTAR_XBMC.translatePath('special://profile/addon_data/' + xbmcaddon.Addon().getAddonInfo('id') + '/_cache_estrenos')
     f = open(ArchivoDestino ,'rb')
@@ -74,7 +75,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     items = re.findall(patron, html)
     if len(items) == 0:
         return ''
-    return u'"""' + html + u'"""'
+    return u'"""' + six.text_type(html) + u'"""'
 ]]></nextpage>
 </regex>
 <regex>
