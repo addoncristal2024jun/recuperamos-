@@ -6,7 +6,7 @@
 
 
 <item>
-<title>[COLOR gold]*[/COLOR]x2 [COLOR aqua]Cine [COLOR white]Cristal Kids[/COLOR]</title>
+<title>[COLOR gold]*[/COLOR]x3 [COLOR aqua]Cine [COLOR white]Cristal Kids[/COLOR]</title>
 <link>$doregex[c]</link>
 <regex>
 <name>c</name>
@@ -69,13 +69,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
     f = open(ArchivoDestino ,'rb')
     items_response = six.ensure_str(f.read())
     html = page_data.split(items_response)[1]
-    html = six.ensureunicode(html)
+    html = six.ensure_text(html)
     xbmc.log('probando nextpage: ' + items_response, LOGNOTICE)
     patron = '(?s)<item>(.*?)</item>'
     items = re.findall(patron, html)
     if len(items) == 0:
         return ''
-    return u'"""' + html + u'"""'
+    return '"""' + html + '"""'
 ]]></nextpage>
 </regex>
 <regex>
