@@ -7,7 +7,7 @@
 
 
 <item>
-<title>[COLOR gold]*[/COLOR]x3 [COLOR aqua]Motor [COLOR white]F1[/COLOR]</title>
+<title>[COLOR gold]*[/COLOR]x1 [COLOR aqua]Motor [COLOR white]F1[/COLOR]</title>
 <link>$doregex[c]</link>
 <regex>
 <name>c</name>
