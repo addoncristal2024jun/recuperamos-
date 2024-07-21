@@ -47,8 +47,8 @@ def GetLSProData(page_data,Cookie_Jar,m):#cPrLItsLTfakl
         url = re.findall('(?s)<urlsolve>(.*?)</', item)[0]
         items_response += [(six.ensure_str(titulo), six.ensure_str(genero), year, imagen_p, fanart, info, url)]
 
-    cabecera = [('[COLOR aqua]F1: [COLOR white]Grandes Premios [/COLOR]', ' ', ' ', 'https://i.imgur.com/YEEOcoE.jpg', 'https://i.imgur.com/Byq4oSp.jpg', ' ', 'https://www.youtube.com/watch?v=4DPGjjCBcAg')]
-    hay_mas_o_no = [('[COLOR white]No hay más resultados...[/COLOR]', ' ', ' ', 'https://i.imgur.com/YEEOcoE.jpg', 'https://i.imgur.com/Byq4oSp.jpg', ' ', 'https://www.youtube.com/watch?v=4DPGjjCBcAg')]
+    cabecera = [('[COLOR aqua]F1: [COLOR white]Grandes Premios [/COLOR]', ' ', ' ', 'https://imgur.com/Hnx25PD.jpg', 'https://i.imgur.com/Byq4oSp.jpg', ' ', 'https://www.youtube.com/watch?v=4DPGjjCBcAg')]
+    hay_mas_o_no = [('[COLOR white]No hay más resultados...[/COLOR]', ' ', ' ', 'https://imgur.com/Hnx25PD.jpg', 'https://i.imgur.com/Byq4oSp.jpg', ' ', 'https://www.youtube.com/watch?v=4DPGjjCBcAg')]
     return cabecera + items_response + hay_mas_o_no
 ]]></expres>
 <page>https://raw.githubusercontent.com/addoncristal2024jun/recuperamos-/main/prueba/BASE_f1</page>
