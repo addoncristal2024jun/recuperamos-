@@ -51,7 +51,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#cPrLItsLTfakl
     hay_mas_o_no = [('[COLOR white]No hay más resultados...[/COLOR]', ' ', ' ', 'https://i.imgur.com/YEEOcoE.jpg', 'https://i.imgur.com/Byq4oSp.jpg', ' ', 'https://www.youtube.com/watch?v=4DPGjjCBcAg')]
     return cabecera + items_response + hay_mas_o_no
 ]]></expres>
-<page>https://raw.githubusercontent.com/staffcf/canto/main/KIDS/Cine.kids.txt</page>
+<page>https://raw.githubusercontent.com/addoncristal2024jun/recuperamos-/main/prueba/BASE_f1</page>
 </regex>
 <regex>
 <name>distancia</name>
@@ -129,8 +129,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>https://i.imgur.com/YEEOcoE.jpg</thumbnail>
-<fanart>https://i.imgur.com/qNos9Dt.jpg</fanart>
+<thumbnail>https://imgur.com/Hnx25PD.jpg</thumbnail>
+<fanart>https://i.imgur.com/Byq4oSp.jpg</fanart>
 	</item>
 
 
