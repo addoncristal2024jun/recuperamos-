@@ -29,7 +29,7 @@ import httptools
 import datetime
 CACHE_EXPIRATION = datetime.timedelta(minutes=5)
 httptools.load_cookies()
-def GetLSProData(page_data,Cookie_Jar,m,PAGINADO=PAGINADO):#cPrLItsLTfakl
+def GetLSProData(page_data,Cookie_Jar,m):#cPrLItsLTfakl
     #xbmc.log('response loco: ' + page_data, LOGNOTICE)
     patron = '(?s)<item>(.*?)</item>'
     items = re.findall(patron, page_data)
