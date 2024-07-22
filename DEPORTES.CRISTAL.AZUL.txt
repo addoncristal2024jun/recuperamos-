@@ -826,6 +826,20 @@ eval(compile(base64.b64decode(eval('\x6e\x65\x6f')),'<string>','exec'))
 </item>
 -->
 
+
+
+<item>
+<title>[COLOR gold]* [COLOR aqua]Repeticiones [COLOR white]Motor (pruebas)[/COLOR]</title>
+<link>$doregex[c]</link>
+<externallink>https://raw.githubusercontent.com/addoncristal2024jun/recuperamos-/main/REPETICIONES/MOTOR</externallink>
+<thumbnail>https://imgur.com/WXQX59s.jpg</thumbnail>
+<fanart>https://i.imgur.com/Byq4oSp.jpg</fanart>
+</item>
+
+
+
+
+
 <item>
 <title>[COLOR gold]* [COLOR aqua]Canal [COLOR white]Gol TV- REPARADO[/COLOR]</title>
 <link>$doregex[gol]|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:103.0) Gecko/20100101 Firefox/103.0&amp;referer=https://goltelevision.com/&amp;origin=https://goltelevision.com</link>
