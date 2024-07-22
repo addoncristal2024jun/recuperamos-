@@ -7,7 +7,7 @@
 
 
 <item>
-<title>[COLOR gold]*[/COLOR]x1 [COLOR aqua]Motor [COLOR white]F1[/COLOR]</title>
+<title>[COLOR gold]*[/COLOR][COLOR aqua]Repeticiones Motor [COLOR white]F1[/COLOR]</title>
 <link>$doregex[c]</link>
 <regex>
 <name>c</name>
@@ -51,21 +51,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#cPrLItsLTfakl
     hay_mas_o_no = [('[COLOR white]No hay más resultados...[/COLOR]', ' ', ' ', 'https://imgur.com/Hnx25PD.jpg', 'https://i.imgur.com/Byq4oSp.jpg', ' ', 'https://www.youtube.com/watch?v=4DPGjjCBcAg')]
     return cabecera + items_response + hay_mas_o_no
 ]]></expres>
-<page>https://raw.githubusercontent.com/addoncristal2024jun/recuperamos-/main/prueba/BASE_f1</page>
-</regex>
-<regex>
-<name>distancia</name>
-<expres><![CDATA[#$pyFunction
-import re,requests,base64,shutil,random
-from kodi_six import xbmc,xbmcgui,xbmcaddon,xbmcvfs
-from six.moves import urllib_request
-import six
-EJECUTAR_XBMC = xbmc if six.PY2 else xbmcvfs
-def GetLSProData(page_data,Cookie_Jar,m):
-    page_data = 'https://raw.githubusercontent.com/staffcf/canto/main/KIDS/Cine.kids.txt'
-    return six.ensure_str(page_data)
-]]></expres>
-<page></page>
+<page>https://pastebin.com/raw/5dauuYzS</page>
 </regex>
 <regex>
 <name>multi</name>
